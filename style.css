@@ -1,0 +1,318 @@
+/* Geral */
+
+body{
+    background-color: rgba(23, 110, 155, 0.09);
+    margin: 0;
+    padding: 0;
+    font-family: Arial;
+}
+
+img{
+    width: 100%;
+}
+
+ul, li{
+    background-color: rgba(255, 255, 255, 0.1);
+    list-style: none;
+}
+
+a{
+    text-decoration: none;
+}
+
+p{
+    text-align: justify;
+}
+
+/* Header */
+
+.header {
+    background-color: rgb(23, 110, 155);
+    align-items: center;
+    padding: 1% 5%;
+    margin: 0;
+
+}
+
+.header .dropdown{
+    display: none;
+}
+
+.header .submit{
+    background-color: rgba(255, 255, 255, 0.2);
+    border-color: transparent;
+    color: white !important;
+}
+
+.header .submit:active, .submit:hover, .submit:visited{
+    background-color: rgba(255, 255, 255, 0.4) !important;
+}
+
+.header form{
+    margin-left: 5%;
+}
+
+.nav-link{
+    color: white !important;
+}
+
+.nav-link:active, .nav-link:hover, .nav-link:visited{
+    background-color: rgba(255, 255, 255, 0.4);
+    text-decoration: none;
+}
+
+/* Footer */
+
+.footer {
+    background-color: rgb(23, 110, 155);
+    color: white;
+    padding: 1%;
+    text-align: center;
+}
+
+.footer .logo{
+    width: 5%;
+    margin-left: 20%;
+}
+
+/* Main */
+
+.perfil, .projetos, .experiencia, .repositorios, .conteudo{
+    margin: 3% 10%;
+}
+
+h1{
+    padding: 1% 0;
+}
+
+.fundo{
+    background-color: rgba(23, 110, 155, 0.5);
+}
+
+.fab{
+    color: black;
+    font-size: 2em;
+    display: inline;
+    margin-right: 5%;
+}
+
+.btn{
+    width: 30%;
+    margin: 1% 0;
+    background-color: rgb(23, 110, 155);
+    color: white !important;
+}
+
+.btn:hover, .btn:active{
+    background-color: rgba(23, 110, 155, 0.8);
+}
+
+.btn .fas{
+    margin-right: 5%;
+}
+
+/* Perfil */
+
+.fim {
+    margin-top: 3%;
+}
+
+/* Projetos */
+
+.card{
+    text-align: center;
+    background-color: transparent;
+    border-color: transparent;
+}
+
+/* Repositórios */
+
+.circulo{
+    background-color: rgba(23, 110, 155, 0.5);
+    border-radius: 10em;
+    padding: 3.5%;
+    width: 4em;
+    height: 4em;
+}
+
+.circulo i{
+    font-size: 2.5em;
+}
+
+.repositorios h3{
+    position: absolute;
+    top: 0.5em;
+    left: 3em;
+    display: inline;
+}
+
+.repositorios p{
+    text-align: left;
+    margin-left: 5.3em;
+}
+
+/* Experiência */
+
+.experiencia img{
+    width: 20%;
+    float: left;
+    margin-right: 1%;
+}
+
+.accordion-body{
+    display: inline-block;
+}
+
+.periodo{
+    font-size: 1.2em;
+}
+
+.video{
+    width: 300px;
+    height: 250px;
+}
+
+@media screen and (max-width: 1200px){
+
+    .fim {
+        margin-top: 1%;
+    }
+
+}
+
+@media screen and (max-width: 1090px) {
+
+    .video{
+        width: 200px;
+        height: 150px;
+    }
+}
+
+@media screen and (max-width: 1060px) {
+
+    .sumir{
+        display: none;
+    }
+}
+
+
+@media screen and (max-width: 991px) {
+
+    .header{
+        width: 100%;
+    }
+
+    .header nav{
+        display: none;
+    }
+
+    .header .dropdown{
+        margin-top: 5%;
+        display: block;
+    }
+
+    .header .dropdown-toggle:visited > .dropdown-menu{
+        display: block;
+    }
+
+    .experiencia img{
+        width: 30%;
+    }
+
+    .btn{
+        width: 50%;
+    }
+
+    .repositorios p{
+        margin-left: 0;
+    }
+}
+
+@media screen and (max-width: 833px) {
+    .footer .logo{
+        width: 5%;
+        margin-left: 3%;
+    }
+}
+
+@media screen and (max-width: 800px){
+
+    .descricao{
+        display: none;
+    }
+
+}
+
+@media screen and (max-width: 768px) {
+
+    #perfil{
+        width: 50%;
+        margin: 1% 25%;
+    }
+
+    .experiencia img{
+        width: 40%;
+    }
+
+    .btn{
+        width: 100%;
+    }
+
+    .video{
+        width: 150px;
+        height: 100px;
+    }
+
+    .footer{
+        font-size: 0.8em;
+    }
+}
+
+@media screen and (max-width: 575px) {
+
+    .experiencia img{
+        width: 50%;
+    }
+
+    .conteudo .video{
+        float: left;
+        margin: 1%;
+    }
+
+    .conteudo h5{
+        display: inline;
+    }
+
+}
+
+@media screen and (max-width: 320px) {
+
+    .projetos .card-body{
+        display: none;
+    }
+
+    .experiencia img{
+        width: 100%;
+        margin-bottom: 1%;
+    }
+
+    .btn{
+        width: 100%;
+    }
+
+    .avaliacao{
+        display: none;
+    }
+
+    .video{
+        display: none;
+    }
+
+    .conteudo h5{
+        font-size: 1em;
+    }
+
+    .conteudo .btn, .experiencia .btn, .projetos .btn{
+        margin-top: 5%;
+    }
+}
