@@ -1,4 +1,4 @@
-# Site-Pessoal
+# Site Pessoal
 
 Site pessoal desenvolvido para o primeiro trabalho da disciplina Desenvolvimento de Interfaces Web
 
